@@ -10,6 +10,7 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "classnames": "^2.3.1",
+    "cypress": "^8.5.0",
     "faker": "^5.5.3",
     "framer-motion": "^4.1.17",
     "graphql": "^15.6.1",
@@ -25,6 +26,7 @@
     "start:mock": "set \"REACT_APP_WITH_MOCKS=true\" && craco start",
     "build": "craco build",
     "test": "craco test",
+    "cypress:open": "cypress open",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

@@ -1,11 +1,12 @@
 import React from "react";
 
-const Input = ({ type = "text", placeholder, value, name, register, errors, required, className }) => {
+const Input = ({ type = "text", placeholder, value, name, register, errors, required, className, id }) => {
   return (
     <div>
       <input
         className={`outline-none p-2 text-center bg-gray-200 rounded-md w-full ${errors?.[name] ? "border-red-400 border-2" : ""} ${className}`}
         type={type}
+        id={id}
         value={value}
         placeholder={placeholder}
         noValidate

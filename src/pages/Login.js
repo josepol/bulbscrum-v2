@@ -52,6 +52,7 @@ const Login = () => {
           </div>
           <div className="flex flex-col py-6 w-60 text-gray-600 text-center">
             <Input
+              id="email-login"
               className="mb-6"
               placeholder="Email"
               name="email"
@@ -61,6 +62,7 @@ const Login = () => {
               errors={errors}
             />
             <Input
+              id="password-login"
               placeholder="Password"
               name="password"
               type="password"
@@ -74,7 +76,7 @@ const Login = () => {
           <Link to="/register">Click here to register</Link>
         </div>
         <div className="w-full">
-          <Button type="submit" text="Continue" className="rounded-b-md" />
+          <Button id="submit-login" type="submit" text="Continue" className="rounded-b-md" />
         </div>
       </form>
       <DialogCard
